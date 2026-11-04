@@ -1,15 +1,18 @@
 # Nishal Madhavarao — Portfolio
 
-Responsive static portfolio website for an AI / Backend Engineer.
+A responsive, static portfolio website for GitHub Pages.
 
-## Run
-Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit http://localhost:8000.
+## Files
+- `index.html` — portfolio content and structure
+- `styles.css` — responsive design
+- `script.js` — mobile navigation and current year
 
-## Personalise before publishing
-- Professional email and LinkedIn profile are already configured.
-- Add GitHub/demo links for projects if available.
-- Add the dates for your EY internship if you want them displayed.
-- Review metrics and project descriptions for accuracy and confidentiality.
-- Add a CV download link if desired.
+## Deploy
+Upload these files to the root of a public GitHub repository and enable GitHub Pages from `main` / root. No build step is required for this plain HTML/CSS/JS version. GitHub Pages can also publish Jekyll sites if you later add Jekyll front matter, layouts and configuration.
 
-Static site; deploy to GitHub Pages, Netlify, or Vercel.
+## Before publishing
+Please verify:
+- The Voice AI call volume and latency figures are approved for public sharing.
+- The project descriptions do not disclose client-confidential information.
+- Confirm all public-facing metrics and enterprise descriptions before publishing.
+- Add a public GitHub link or project demos only if they are safe to share.

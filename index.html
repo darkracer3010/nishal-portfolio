@@ -1,33 +1,179 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Nishal Madhavarao — AI and Backend Engineer">
-<title>Nishal Madhavarao | AI & Backend Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"></head><body>
-<header><a class="logo" href="#home">N<span>.</span></a><button id="menu" aria-label="Open menu">☰</button><nav id="nav"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#about">About</a><a class="navbtn" href="#contact">Let's talk ↗</a></nav></header>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nishal Madhavarao — AI Engineer and Backend Engineer building production AI, Voice AI, RAG and scalable backend systems.">
+  <meta name="theme-color" content="#0b100e">
+  <title>Nishal Madhavarao | AI & Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">NM<span>.</span></a>
+  <button class="menu-toggle" id="menu" aria-label="Toggle navigation">☰</button>
+  <nav id="nav">
+    <a href="#journey">Journey</a><a href="#work">Selected work</a><a href="#capabilities">Capabilities</a><a href="#credentials">Education</a><a href="#about">About</a><a class="nav-cta" href="#contact">Contact ↗</a>
+  </nav>
+</header>
 <main>
-<section class="hero" id="home"><div><div class="eyebrow"><i></i> AI ENGINEERING / HYDERABAD, INDIA</div><h1>Building AI that<br><em>works in the</em><br>real world<span class="lime">.</span></h1>
-<p class="lead">I'm Nishal — an AI and backend engineer turning LLMs, agents, and complex workflows into reliable production systems.</p>
-<div class="actions"><a class="btn primary" href="#work">Explore my work ↘</a><a class="btn" href="#contact">Get in touch ↗</a></div><div class="subline">PYTHON · GENAI · BACKEND SYSTEMS</div></div>
-<div class="visual"><div class="orbit o1"></div><div class="orbit o2"></div><div class="core"><b>AI</b><small>IN PRODUCTION</small></div><div class="float f1"><b>100–200</b><small>daily voice calls</small></div><div class="float f2"><b>RAG + AGENTS</b><small>real-world workflows</small></div><span class="visualnote">FROM PROTOTYPE TO PRODUCTION</span></div></section>
-<section class="stats"><div><b>100–200</b><small>customer calls supported daily</small></div><div><b>~500–800 ms</b><small>voice-to-voice latency achieved</small></div><div><b>15+</b><small>backend REST endpoints owned</small></div><div><b>100K+</b><small>users on enterprise platform</small></div></section>
-<section class="section" id="work"><div class="heading"><div><label>01 / SELECTED WORK</label><h2>Systems I've <em>shipped.</em></h2></div><p>Applied AI, backend engineering, and the work of making systems dependable after launch.</p></div>
-<div class="grid">
-<article class="project featured"><div class="art voice"><span class="artlabel">LIVE CONVERSATION PIPELINE</span><div class="wave">〰〰〰〰〰〰〰</div><div class="nodes"><span>STT</span><span>LLM</span><span>TTS</span></div></div><div class="details"><label>01 / VOICE AI</label><div class="tags">Python · Twilio · Azure Voice Live · Pipecat · RAG</div><h3>Real-time Voice AI, from POC to production</h3><p>Built a conversational voice system integrating telephony, low-latency voice models, orchestration, and retrieval-backed customer context. Benchmarked providers and tuned interruptions, VAD, noise handling, and voice settings.</p><div class="impact"><b>IMPACT</b><span>Supported around 100–200 customer calls per day, with approximately 500–800 ms voice-to-voice latency.</span></div></div></article>
-<article class="project"><div class="art retrieval"><div class="flow">DOCS <i>→</i> CHUNK <i>→</i> EMBED <i>→</i> VECTOR</div><div class="database">VECTOR<br>STORE</div><small>KAFKA EVENT</small></div><div class="details"><label>02 / RETRIEVAL</label><div class="tags">Python · Kafka · Embeddings · MongoDB</div><h3>Event-driven RAG ingestion</h3><p>Designed a consumer-driven indexing pipeline triggered by agent and document events. It processes documents, creates chunks and embeddings, and indexes them for semantic retrieval—removing manual onboarding and re-indexing steps.</p><div class="impact"><b>FOCUS</b><span>Automated ingestion, repeatable indexing, and retrieval-ready knowledge.</span></div></div></article>
-<article class="project"><div class="art backend"><div class="api">API GATEWAY</div><div class="api2">POSTGRES <i>↔</i> REDIS</div><div class="latency">p95&nbsp; 2–5s <b>→</b> 200–900ms</div></div><div class="details"><label>03 / BACKEND</label><div class="tags">Node.js · REST APIs · PostgreSQL · Redis · Docker</div><h3>Performance-focused backend engineering</h3><p>Owned around 15 REST endpoints on an enterprise platform serving 100K+ users. Improved slow endpoints through query optimisation, indexing, caching, and reducing response payloads.</p><div class="impact"><b>IMPACT</b><span>Reduced p95 latency on slow endpoints from 2–5 seconds to roughly 200–900 ms.</span></div></div></article>
-<article class="project"><div class="art agents"><div class="agent">AGENT</div><span class="tool t1">MCP</span><span class="tool t2">TOOLS</span><span class="tool t3">ADK</span><span class="tool t4">APIs</span></div><div class="details"><label>04 / AGENT SYSTEMS</label><div class="tags">Google ADK · MCP · Python · Tool calling</div><h3>Tool-connected AI workflows</h3><p>Built and explored agent workflows with external tool and API integrations, including MCP-based integrations and multi-agent prototypes using Google ADK.</p><div class="impact"><b>FOCUS</b><span>Connecting LLM reasoning to useful actions, services, and business context.</span></div></div></article>
-</div></section>
-<section class="section" id="experience"><div class="heading"><div><label>02 / THE JOURNEY</label><h2>Experience in <em>practice.</em></h2></div><p>Engineering ownership across AI systems, backend services, and production delivery.</p></div>
-<div class="timeline"><div class="date">JUL 2023 — PRESENT</div><div class="marker"></div><div><h3>Consultant <small>EY · Hyderabad, India</small></h3><p>Technology Consulting — building backend services and applied GenAI solutions, from architecture and prototyping through production deployment and support.</p><ul><li>Built real-time Voice AI and retrieval-backed conversational experiences.</li><li>Developed Kafka-triggered document ingestion and vector indexing workflows.</li><li>Owned backend APIs and improved endpoint performance through caching and query optimisation.</li><li>Worked with Azure OpenAI, Azure services, agent frameworks, and external APIs.</li></ul></div>
-<div class="date">INTERNSHIP</div><div class="marker"></div><div><h3>Intern <small>EY · India</small></h3><p>Received knowledge-transfer sessions on ongoing projects and supported the team with manual API testing, validating endpoints and checking responses against expected behaviour.</p></div></div></section>
-<section class="section" id="skills"><div class="heading"><div><label>03 / MY TOOLKIT</label><h2>Tools for the <em>job.</em></h2></div><p>A practical stack across applied AI, backend development, data, and cloud.</p></div>
-<div class="skill"><label>01</label><h3>AI & LLM Engineering</h3><p>LLMs · RAG · Embeddings · Vector Search · Prompt Design · AI Agents · Tool Calling · Evaluation · Google ADK · MCP · LangChain / LangGraph</p></div>
-<div class="skill"><label>02</label><h3>Backend & APIs</h3><p>Python · FastAPI · Node.js · REST APIs · WebSockets · SSE · Pydantic · SQLAlchemy</p></div>
-<div class="skill"><label>03</label><h3>Data & Messaging</h3><p>PostgreSQL · MongoDB · Redis · Kafka · Azure Service Bus · Vector Databases · SQL</p></div>
-<div class="skill"><label>04</label><h3>Cloud & Delivery</h3><p>Azure · Azure OpenAI · Docker · Application Insights · Azure Data Explorer · Production Debugging</p></div></section>
-<section class="about" id="about"><div class="stamp">NM<span>✳</span></div><div><label>04 / A LITTLE ABOUT ME</label><h2>Curious by default.<br><em>Practical by design.</em></h2><p>I enjoy working where software engineering meets applied AI: understanding a messy problem, choosing the right approach, building a working system, and making sure it behaves reliably in production. I'm especially interested in AI engineering, backend systems, and products where intelligent automation creates a measurable difference.</p><div class="interests">CRICKET　 FOOTBALL　 GAMING　 ANIME</div></div></section>
-<section class="contact section" id="contact"><label>HAVE A PROBLEM TO SOLVE? / LET'S TALK</label><h2>Let's build something<br><em>that matters.</em></h2><p>Interested in AI engineering, backend systems, or building useful products? I'd be glad to connect.</p><div class="actions"><a class="btn primary" href="mailto:nishal.madhavarao30@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/nishal-madhavarao" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><footer><span>© <span id="year"></span> NISHAL MADHAVARAO</span><span>DESIGNED & BUILT WITH INTENT</span><a href="#home">BACK TO TOP ↑</a></footer></section>
-</main><script src="script.js"></script></body></html>
+<section class="hero wrap" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> AI ENGINEERING · BACKEND SYSTEMS · HYDERABAD, INDIA</div>
+    <h1>I build AI systems<br>that work <em>in the real world.</em></h1>
+    <p class="hero-lead">I'm Nishal Madhavarao, an engineer at EY working across applied AI and backend engineering. I take ideas beyond demos — building conversational AI, retrieval pipelines and APIs that can operate reliably in production.</p>
+    <div class="hero-actions"><a class="button button-primary" href="#work">Explore selected work ↓</a><a class="button" href="mailto:nishal.madhavarao30@gmail.com">Get in touch ↗</a></div>
+    <div class="hero-foot">PYTHON / GENAI / RAG / VOICE AI / DISTRIBUTED BACKENDS</div>
+  </div>
+  <div class="hero-art" aria-label="Illustration of connected AI system components">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="system-core"><b>AI</b><small>BUILT TO SHIP</small></div>
+    <div class="orbit-tag tag-one"><b>RETRIEVE</b><small>Context that matters</small></div>
+    <div class="orbit-tag tag-two"><b>REASON</b><small>Models + tools</small></div>
+    <div class="orbit-tag tag-three"><b>RESPOND</b><small>Useful outcomes</small></div>
+    <div class="art-caption">FROM EXPERIMENT TO PRODUCTION</div>
+  </div>
+</section>
+
+<section class="proof-strip">
+  <div><strong>50–100</strong><span>customer calls supported daily</span></div>
+  <div><strong>~500–800 ms</strong><span>voice-to-voice latency achieved</span></div>
+  <div><strong>15+</strong><span>REST endpoints owned</span></div>
+  <div><strong>100K+</strong><span>users on enterprise platform</span></div>
+</section>
+
+<section class="section wrap" id="journey">
+  <div class="section-head"><div><div class="section-kicker">01 / THE JOURNEY</div><h2>From learning the systems<br>to <em>owning what ships.</em></h2></div><p class="section-intro">My experience has grown from understanding existing software and validating APIs to designing, building and operating backend and AI-powered capabilities.</p></div>
+  <div class="journey">
+    <article class="journey-item">
+      <div class="journey-rail"><span class="journey-dot"></span><span class="journey-line"></span></div>
+      <div class="journey-content">
+        <div class="journey-meta">CURRENT ROLE · JUL 2023 — PRESENT · HYDERABAD</div>
+        <h3>Consultant <span>EY · Technology Consulting</span></h3>
+        <p class="journey-summary">Working at the intersection of backend engineering and applied GenAI — taking ownership of services and AI capabilities from technical exploration through implementation, integration and production support.</p>
+        <div class="journey-columns">
+          <div><h4>Applied AI & conversational systems</h4><ul>
+            <li>Took a real-time Voice AI solution from proof of concept to production, integrating Twilio, Azure Voice Live, Pipecat and retrieval-backed customer context.</li>
+            <li>Evaluated voice providers and models, comparing latency and conversational quality before selecting the production approach.</li>
+            <li>Tuned voice activity detection, interruption handling, noise behaviour and voice configuration to improve real-call experience.</li>
+            <li>Helped deliver a service supporting roughly 50–100 customer calls per day, with approximately 500–800 ms voice-to-voice latency.</li>
+          </ul></div>
+          <div><h4>RAG, ingestion & knowledge retrieval</h4><ul>
+            <li>Designed event-driven ingestion using Confluent Kafka, with agent and document events triggering downstream indexing workflows.</li>
+            <li>Implemented document processing, chunking, embedding generation and vector indexing to make knowledge available for semantic retrieval.</li>
+            <li>Separated ingestion/indexing responsibilities from the retrieval API so updates could happen asynchronously without coupling them to query-time requests.</li>
+            <li>Removed manual onboarding and re-indexing steps for knowledge used by production agents.</li>
+          </ul></div>
+          <div><h4>Backend engineering & production ownership</h4><ul>
+            <li>Owned and maintained around 15 REST endpoints in a Node.js backend used by an enterprise platform serving 100K+ users.</li>
+            <li>Worked with authentication, downstream integrations, SQL-backed services and containerised delivery.</li>
+            <li>Improved slow API paths using query optimisation, database indexing, Redis caching and smaller response payloads.</li>
+            <li>Reduced p95 latency on selected slow endpoints from approximately 2–5 seconds to 200–900 ms.</li>
+          </ul></div>
+          <div><h4>Integration, observability & collaboration</h4><ul>
+            <li>Built integrations with external APIs and explored tool-connected agent workflows using MCP and Google ADK.</li>
+            <li>Worked with Azure OpenAI, Azure Service Bus, WebSockets/SSE streaming and supporting cloud services.</li>
+            <li>Used Application Insights and Azure Data Explorer for logs, diagnostics and production troubleshooting.</li>
+            <li>Created technical documentation and runbooks, and supported knowledge-transfer sessions for delivered systems.</li>
+          </ul></div>
+        </div>
+        <div class="journey-stack"><b>TECH USED</b> Python · FastAPI · Node.js · Kafka · Azure · Azure OpenAI · Twilio · Pipecat · MongoDB · PostgreSQL · Redis · Docker · MCP · Google ADK</div>
+      </div>
+    </article>
+    <article class="journey-item internship">
+      <div class="journey-rail"><span class="journey-dot"></span></div>
+      <div class="journey-content">
+        <div class="journey-meta">FEB 2023 — JUL 2023 · HYDERABAD, INDIA</div>
+        <h3>Technology Consulting Intern <span>EY</span></h3>
+        <p class="journey-summary">My internship was an introduction to enterprise project environments and software quality practices. I attended knowledge-transfer sessions to understand project context, workflows and existing APIs, then supported the team with manual API testing.</p>
+        <ul>
+          <li>Reviewed project information shared during knowledge-transfer sessions to understand the purpose and expected behaviour of existing services.</li>
+          <li>Performed manual API testing by sending requests, validating responses and checking endpoint behaviour against expected results.</li>
+          <li>Built familiarity with API request/response patterns, test scenarios and the importance of validating integrations before release.</li>
+        </ul>
+        <div class="journey-stack"><b>FOCUS</b> Project KT · Manual API Testing · Request/Response Validation · Software Quality</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section work-section" id="work">
+  <div class="wrap">
+    <div class="section-head"><div><div class="section-kicker">02 / SELECTED WORK</div><h2>Engineering problems.<br><em>Practical outcomes.</em></h2></div><p class="section-intro">A closer look at the systems I've worked on — the problem, the engineering approach and what changed as a result.</p></div>
+    <article class="case-study case-featured">
+      <div class="case-visual voice-visual"><div class="visual-kicker">01 / REAL-TIME CONVERSATION</div><div class="voice-flow"><span>CALLER</span><i>→</i><span>TWILIO</span><i>→</i><span>VOICE AI</span><i>→</i><span>RESPONSE</span></div><div class="voice-orb">VOICE<br><b>AI</b></div><div class="visual-bottom">LOW LATENCY · INTERRUPTION AWARE · CONTEXTUAL</div></div>
+      <div class="case-copy"><div class="case-label">VOICE AI · POC TO PRODUCTION</div><h3>Real-time Voice AI for customer conversations</h3><p class="case-problem"><b>The challenge</b> Deliver a natural voice experience that can handle real customer calls, respond quickly, use relevant customer knowledge and remain stable when people interrupt or speak in noisy environments.</p><p><b>What I worked on</b> I took the solution from POC towards production, integrating Twilio for telephony, Azure Voice Live for real-time speech interaction, Pipecat for orchestration and RAG to bring customer-specific context into the conversation. I benchmarked available providers, then tuned VAD, interruptions, noise handling and voice settings based on observed behaviour.</p><p><b>Engineering considerations</b> Streaming audio and responses, keeping the interaction responsive, retrieving the right context, handling turn-taking and diagnosing issues through session logs and dashboards.</p><div class="case-result"><strong>50–100</strong><span>calls/day supported</span><strong>~500–800 ms</strong><span>voice-to-voice latency</span></div><div class="chip-row"><span>Twilio</span><span>Azure Voice Live</span><span>Pipecat</span><span>Python</span><span>RAG</span></div></div>
+    </article>
+
+    <div class="case-grid">
+      <article class="case-study">
+        <div class="case-visual rag-visual"><div class="visual-kicker">02 / KNOWLEDGE PIPELINE</div><div class="pipeline"><span>DOCS</span><i>→</i><span>CHUNK</span><i>→</i><span>EMBED</span><i>→</i><span>INDEX</span></div><div class="kafka-pill">KAFKA EVENT</div><div class="vector-box">VECTOR<br>SEARCH</div></div>
+        <div class="case-copy"><div class="case-label">RAG · EVENT-DRIVEN INGESTION</div><h3>Automating knowledge ingestion for AI agents</h3><p><b>The challenge</b> Keep agent knowledge up to date without relying on manual document onboarding or a separate re-indexing step.</p><p><b>What I worked on</b> Designed a consumer-driven pipeline where Kafka events trigger document processing. The service parses content, creates chunks, generates embeddings and writes them to vector storage for retrieval. The ingestion service operates independently from the query-time retrieval API.</p><p><b>Why it matters</b> Document updates become repeatable background workflows, while retrieval remains focused on serving low-latency queries.</p><div class="chip-row"><span>Python</span><span>Confluent Kafka</span><span>Embeddings</span><span>MongoDB</span><span>Vector Search</span></div></div>
+      </article>
+      <article class="case-study">
+        <div class="case-visual backend-visual"><div class="visual-kicker">03 / API PERFORMANCE</div><div class="api-block">REST API</div><div class="db-blocks"><span>POSTGRES</span><span>REDIS CACHE</span></div><div class="latency-shift"><span>2–5s</span><i>→</i><b>200–900ms</b></div></div>
+        <div class="case-copy"><div class="case-label">BACKEND · PERFORMANCE</div><h3>Improving API performance on an enterprise platform</h3><p><b>The challenge</b> Some endpoints had slow response times and needed to serve a large user base reliably.</p><p><b>What I worked on</b> Owned around 15 REST endpoints and improved selected slow paths through SQL query tuning, indexing, Redis caching and reducing unnecessary response payloads.</p><p><b>Outcome</b> Brought p95 latency on targeted slow endpoints down from around 2–5 seconds to approximately 200–900 ms.</p><div class="chip-row"><span>Node.js</span><span>REST</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div></div>
+      </article>
+      <article class="case-study">
+        <div class="case-visual agent-visual"><div class="visual-kicker">04 / TOOL-CONNECTED AI</div><div class="agent-node">LLM<br>AGENT</div><span class="agent-tag a1">MCP</span><span class="agent-tag a2">BUSINESS API</span><span class="agent-tag a3">GOOGLE ADK</span><span class="agent-tag a4">TOOLS</span></div>
+        <div class="case-copy"><div class="case-label">AGENTS · INTEGRATIONS</div><h3>Connecting AI agents to business tools</h3><p><b>The focus</b> Move beyond text generation by allowing an agent to access external systems and perform useful, controlled actions.</p><p><b>What I worked on</b> Explored MCP-based integrations with external APIs, including Salesforce, and built multi-agent prototypes using Google ADK and Python. This work involved defining tool interfaces, passing structured inputs and connecting model reasoning to application capabilities.</p><p><b>Engineering lesson</b> Useful agents need clear tool contracts, predictable outputs, error handling and observability — not just a good prompt.</p><div class="chip-row"><span>Python</span><span>MCP</span><span>Google ADK</span><span>API Integration</span></div></div>
+      </article>
+    </div>
+    <p class="confidential-note">Some work was delivered in enterprise/client environments and cannot be shared as public source code. The descriptions here focus on my engineering contributions without exposing confidential information.</p>
+  </div>
+</section>
+
+<section class="section wrap" id="capabilities">
+  <div class="section-head"><div><div class="section-kicker">03 / CAPABILITIES</div><h2>What I bring<br><em>to a team.</em></h2></div><p class="section-intro">A practical combination of AI engineering, backend fundamentals and production ownership.</p></div>
+  <div class="capability-grid">
+    <article><span>01</span><h3>Applied AI & LLMs</h3><p>LLM integration, prompt design, structured outputs, context construction, agent workflows and model/provider evaluation.</p><div>Azure OpenAI · LLM APIs · Google ADK · MCP</div></article>
+    <article><span>02</span><h3>RAG & Retrieval</h3><p>Document processing, chunking, embeddings, semantic search, vector indexing, hybrid retrieval concepts and retrieval evaluation.</p><div>MongoDB Vector Search · Azure AI Search · pgvector</div></article>
+    <article><span>03</span><h3>Backend & APIs</h3><p>Designing service interfaces, building REST APIs, streaming responses, integrating external systems and improving API performance.</p><div>Python · FastAPI · Node.js · WebSockets · SSE</div></article>
+    <article><span>04</span><h3>Data & Messaging</h3><p>Event-driven workflows, asynchronous processing, SQL data access, caching and reliable ingestion pipelines.</p><div>Kafka · PostgreSQL · MongoDB · Redis · Azure Service Bus</div></article>
+    <article><span>05</span><h3>Cloud & Operations</h3><p>Containerised services, production diagnostics, logs, tracing, issue investigation and technical documentation.</p><div>Azure · Docker · App Insights · Azure Data Explorer</div></article>
+    <article><span>06</span><h3>Engineering ownership</h3><p>Taking a feature from unclear requirements to a working implementation, validating trade-offs and collaborating with stakeholders.</p><div>Design · Benchmarking · Debugging · Documentation</div></article>
+  </div>
+  <div class="stack-panel"><div><b>LANGUAGES</b><span>Python · JavaScript · TypeScript · SQL</span></div><div><b>FRAMEWORKS</b><span>FastAPI · Node.js · React · LangChain · LangGraph</span></div><div><b>DATABASES</b><span>PostgreSQL · MongoDB · Redis · Vector databases</span></div><div><b>PLATFORM</b><span>Azure · Docker · Kafka · GitHub</span></div></div>
+</section>
+
+<section class="section credentials-section wrap" id="credentials">
+  <div class="section-head"><div><div class="section-kicker">04 / EDUCATION & RECOGNITION</div><h2>Strong foundations.<br><em>Continuous learning.</em></h2></div><p class="section-intro">A computer science foundation, cloud certifications and recognition for client delivery.</p></div>
+  <div class="credentials-grid">
+    <article class="education-card">
+      <div class="credential-kicker">EDUCATION · 2019 — 2023</div>
+      <h3>B.Tech, Computer Science & Engineering</h3>
+      <p>Vardhaman College of Engineering · Hyderabad, India</p>
+      <div class="credential-score">8.1 <span>/ 10 GPA</span></div>
+      <div class="credential-date">AUG 2019 — JUL 2023</div>
+    </article>
+    <article class="credential-card">
+      <div class="credential-kicker">MICROSOFT · DEC 2023</div>
+      <h3>Azure Fundamentals</h3>
+      <p>Microsoft Certified · AZ-900</p>
+      <span class="credential-tag">CLOUD FUNDAMENTALS</span>
+    </article>
+    <article class="credential-card">
+      <div class="credential-kicker">AWS · APR 2024</div>
+      <h3>AWS Certified Cloud Practitioner</h3>
+      <p>Certification valid through April 2027.</p>
+      <span class="credential-tag">CLOUD FUNDAMENTALS</span>
+    </article>
+    <article class="credential-card award-card">
+      <div class="credential-kicker">EY · 2025 & 2026</div>
+      <h3>EY Client Extraordinaire</h3>
+      <p>Recognised for client delivery impact in back-to-back years.</p>
+      <span class="credential-tag">BACK-TO-BACK RECOGNITION</span>
+    </article>
+  </div>
+</section>
+
+<section class="about-section" id="about"><div class="wrap about-inner"><div class="about-mark">NM<span>✳</span></div><div><div class="section-kicker">05 / BEYOND THE STACK</div><h2>Curious about the problem.<br><em>Serious about the outcome.</em></h2><p>I enjoy working on problems where software needs to do more than look impressive in a demo. I like understanding how a workflow actually operates, identifying where engineering can remove friction, and building something dependable enough for people to use every day.</p><p>I'm especially interested in AI engineering and backend roles where I can work close to the product, go deep on system behaviour and take end-to-end ownership. Outside work, I follow cricket and football, play video games and watch anime.</p><div class="personal-tags"><span>BUILD</span><span>MEASURE</span><span>IMPROVE</span><span>REPEAT</span></div></div></div></section>
+
+<section class="contact-section wrap" id="contact"><div class="section-kicker">06 / OPEN TO THE RIGHT OPPORTUNITY</div><h2>Have an interesting<br><em>problem to solve?</em></h2><p>I'm interested in AI Engineer, Applied AI and Backend Software Engineer opportunities. If you're building practical AI products or scalable backend systems, let's connect.</p><div class="hero-actions"><a class="button button-primary" href="mailto:nishal.madhavarao30@gmail.com">nishal.madhavarao30@gmail.com ↗</a><a class="button" href="https://www.linkedin.com/in/nishal-madhavarao" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><footer><span>© <span id="year"></span> NISHAL MADHAVARAO</span><span>AI ENGINEERING · BACKEND SYSTEMS</span><a href="#home">BACK TO TOP ↑</a></footer></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
