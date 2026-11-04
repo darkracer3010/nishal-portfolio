@@ -1,179 +1,63 @@
-/* Keep the existing visual design, then improve readability across the full page. */
-@import url("https://raw.githubusercontent.com/darkracer3010/nishal-portfolio/dc4dd98b2b60c325877f271f40a3109df15e34a4/styles.css");
+/* Load the original stylesheet from a CSS-serving CDN, then layer readable type sizes on top. */
+@import url("https://cdn.jsdelivr.net/gh/darkracer3010/nishal-portfolio@dc4dd98b2b60c325877f271f40a3109df15e34a4/styles.css");
 
 body {
   font-size: 17px;
   line-height: 1.75;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-nav {
-  font-size: 15px;
-}
-
-.button {
-  font-size: 14px;
-}
-
-.eyebrow {
-  font-size: 12px;
-}
-
-.hero-lead {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.hero-foot {
-  font-size: 11px;
-}
-
-.proof-strip {
-  row-gap: 18px;
-}
-
-.proof-strip strong {
-  font-size: 29px;
-}
-
-.proof-strip span {
-  font-size: 13px;
-  line-height: 1.5;
-}
+nav { font-size: 15px; }
+.button { font-size: 14px; }
+.eyebrow { font-size: 12px; }
+.hero-lead { font-size: 18px; line-height: 1.8; }
+.hero-foot { font-size: 11px; }
+.proof-strip { row-gap: 18px; }
+.proof-strip strong { font-size: 29px; }
+.proof-strip span { font-size: 13px; line-height: 1.5; }
 
 .section-kicker,
 .journey-meta,
 .case-label,
-.visual-kicker {
-  font-size: 11px;
-}
-
-.section-intro {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.journey-meta {
-  line-height: 1.6;
-}
-
-.journey-content h3 {
-  font-size: 29px;
-  line-height: 1.3;
-}
-
-.journey-content h3 span {
-  font-size: 15px;
-}
-
-.journey-summary {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.journey-columns h4 {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.journey-content ul {
-  font-size: 14px;
-  line-height: 1.85;
-}
-
-.journey-stack {
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.journey-stack b {
-  font-size: 11px;
-}
-
-.case-label {
-  line-height: 1.6;
-}
-
-.case-copy h3 {
-  font-size: 26px;
-  line-height: 1.35;
-}
-
-.case-copy p {
-  font-size: 15px;
-  line-height: 1.85;
-}
-
-.case-result span {
-  font-size: 12px;
-}
-
-.chip-row span {
-  font-size: 10px;
-}
-
-.confidential-note {
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-.capability-grid article > span {
-  font-size: 12px;
-}
-
-.capability-grid h3 {
-  font-size: 19px;
-  line-height: 1.4;
-}
-
-.capability-grid p {
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.capability-grid article > div {
-  font-size: 11px;
-  line-height: 1.8;
-}
-
-.stack-panel b {
-  font-size: 11px;
-}
-
-.stack-panel span {
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.credentials-grid article {
-  padding: 28px;
-}
-
+.visual-kicker,
 .credential-kicker {
   font-size: 11px;
+  letter-spacing: 0.12em;
 }
 
-.credentials-grid h3 {
-  font-size: 20px;
-  line-height: 1.45;
-}
+.section-intro { font-size: 16px; line-height: 1.8; }
+.journey-meta { line-height: 1.6; }
+.journey-content h3 { font-size: 29px; line-height: 1.3; letter-spacing: -0.025em; }
+.journey-content h3 span { font-size: 15px; }
+.journey-summary { font-size: 16px; line-height: 1.8; }
+.journey-columns h4 { font-size: 16px; line-height: 1.5; }
+.journey-content ul { font-size: 15px; line-height: 1.9; }
+.journey-stack { font-size: 14px; line-height: 1.8; }
+.journey-stack b { font-size: 11px; }
 
-.credentials-grid p {
-  font-size: 14px;
-  line-height: 1.75;
-}
+.case-label { line-height: 1.6; }
+.case-copy h3 { font-size: 26px; line-height: 1.35; letter-spacing: -0.025em; }
+.case-copy p { font-size: 16px; line-height: 1.85; }
+.case-result span { font-size: 12px; }
+.chip-row span { font-size: 10px; }
+.confidential-note { font-size: 14px; line-height: 1.7; }
 
-.credential-score span {
-  font-size: 12px;
-}
+.capability-grid article > span { font-size: 12px; }
+.capability-grid h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.025em; }
+.capability-grid p { font-size: 15px; line-height: 1.8; }
+.capability-grid article > div { font-size: 11px; line-height: 1.8; }
+.stack-panel b { font-size: 11px; }
+.stack-panel span { font-size: 14px; line-height: 1.7; }
 
-.credential-date {
-  font-size: 11px;
-}
-
-.credential-tag {
-  font-size: 10px;
-  line-height: 1.5;
-}
+.credentials-grid article { padding: 28px; }
+.credentials-grid h3 { font-size: 20px; line-height: 1.45; letter-spacing: -0.025em; }
+.credentials-grid p { font-size: 15px; line-height: 1.8; }
+.credential-score span { font-size: 12px; }
+.credential-date { font-size: 11px; }
+.credential-tag { font-size: 10px; line-height: 1.5; }
 
 .about-inner p,
 .contact-section > p {
@@ -181,32 +65,23 @@ nav {
   line-height: 1.85;
 }
 
-.personal-tags span {
-  font-size: 10px;
+.personal-tags span { font-size: 10px; }
+
+.section-head h2,
+.about-inner h2,
+.contact-section h2 {
+  letter-spacing: -0.045em;
 }
 
 @media (max-width: 850px) {
-  .journey-content h3 {
-    font-size: 26px;
-  }
-
-  .case-copy h3 {
-    font-size: 23px;
-  }
+  .journey-content h3 { font-size: 26px; }
+  .case-copy h3 { font-size: 23px; }
 }
 
 @media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  .hero-lead {
-    font-size: 17px;
-  }
-
-  .proof-strip span {
-    font-size: 12px;
-  }
+  body { font-size: 16px; }
+  .hero-lead { font-size: 17px; }
+  .proof-strip span { font-size: 12px; }
 
   .section-intro,
   .journey-summary,
@@ -215,97 +90,8 @@ nav {
     font-size: 15px;
   }
 
-  .journey-content h3 {
-    font-size: 23px;
-  }
+  .journey-content h3 { font-size: 23px; }
 
-  .journey-content ul,
-  .case-copy p,
-  .capability-grid p,
-  .credentials-grid p {
-    font-size: 14px;
-  }
-
-  .case-copy h3 {
-    font-size: 21px;
-  }
-
-  .credentials-grid article {
-    padding: 23px;
-  }
-}
-
-/* Editorial refinement: clearer body-copy hierarchy and more comfortable reading. */
-:root {
-  --reading-copy: #c1cbc2;
-}
-
-body {
-  font-weight: 500;
-  letter-spacing: 0.005em;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-.hero-lead,
-.section-intro,
-.journey-summary,
-.journey-content ul,
-.case-copy p,
-.capability-grid p,
-.credentials-grid p,
-.about-inner p,
-.contact-section > p {
-  color: var(--reading-copy);
-}
-
-.journey-content ul {
-  font-size: 15px;
-  line-height: 1.9;
-}
-
-.case-copy p {
-  font-size: 16px;
-  line-height: 1.85;
-}
-
-.capability-grid p,
-.credentials-grid p {
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-.journey-stack,
-.stack-panel span {
-  font-size: 14px;
-}
-
-.confidential-note {
-  font-size: 14px;
-}
-
-.section-kicker,
-.journey-meta,
-.case-label,
-.visual-kicker,
-.credential-kicker {
-  letter-spacing: 0.12em;
-}
-
-.section-head h2,
-.about-inner h2,
-.contact-section h2 {
-  letter-spacing: -0.045em;
-}
-
-.case-copy h3,
-.journey-content h3,
-.capability-grid h3,
-.credentials-grid h3 {
-  letter-spacing: -0.025em;
-}
-
-@media (max-width: 600px) {
   .journey-content ul,
   .case-copy p,
   .capability-grid p,
@@ -313,9 +99,7 @@ body {
     font-size: 15px;
   }
 
-  .journey-stack,
-  .stack-panel span,
-  .confidential-note {
-    font-size: 13px;
-  }
+  .case-copy h3 { font-size: 21px; }
+  .journey-stack, .stack-panel span, .confidential-note { font-size: 13px; }
+  .credentials-grid article { padding: 23px; }
 }
