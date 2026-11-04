@@ -234,3 +234,88 @@ nav {
     padding: 23px;
   }
 }
+
+/* Editorial refinement: clearer body-copy hierarchy and more comfortable reading. */
+:root {
+  --reading-copy: #c1cbc2;
+}
+
+body {
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.hero-lead,
+.section-intro,
+.journey-summary,
+.journey-content ul,
+.case-copy p,
+.capability-grid p,
+.credentials-grid p,
+.about-inner p,
+.contact-section > p {
+  color: var(--reading-copy);
+}
+
+.journey-content ul {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.case-copy p {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.capability-grid p,
+.credentials-grid p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.journey-stack,
+.stack-panel span {
+  font-size: 14px;
+}
+
+.confidential-note {
+  font-size: 14px;
+}
+
+.section-kicker,
+.journey-meta,
+.case-label,
+.visual-kicker,
+.credential-kicker {
+  letter-spacing: 0.12em;
+}
+
+.section-head h2,
+.about-inner h2,
+.contact-section h2 {
+  letter-spacing: -0.045em;
+}
+
+.case-copy h3,
+.journey-content h3,
+.capability-grid h3,
+.credentials-grid h3 {
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 600px) {
+  .journey-content ul,
+  .case-copy p,
+  .capability-grid p,
+  .credentials-grid p {
+    font-size: 15px;
+  }
+
+  .journey-stack,
+  .stack-panel span,
+  .confidential-note {
+    font-size: 13px;
+  }
+}
