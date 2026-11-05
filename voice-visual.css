@@ -1,9 +1,7 @@
 /* Voice AI case-study artwork: layered audio signal and live-conversation treatment. */
 .voice-visual {
   isolation: isolate;
-  background:
-    radial-gradient(ellipse at 50% 56%, rgba(119, 164, 78, .18), transparent 34%),
-    linear-gradient(145deg, #17261d, #101713 72%);
+  background: linear-gradient(145deg, #17261d, #101713 72%);
 }
 
 .voice-visual::before {
@@ -17,20 +15,10 @@
     linear-gradient(rgba(183, 219, 140, .045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(183, 219, 140, .045) 1px, transparent 1px);
   background-size: 34px 34px;
-  mask-image: linear-gradient(to bottom, transparent 8%, #000 48%, transparent 92%);
+  mask-image: linear-gradient(to bottom, transparent 2%, #000 20%, #000 84%, transparent 99%);
 }
 
-.voice-visual::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 52%;
-  left: 8%;
-  right: 8%;
-  height: 1px;
-  pointer-events: none;
-  background: linear-gradient(90deg, transparent, rgba(201, 243, 107, .24), transparent);
-}
+/* Glow is carried by the orb's own box-shadow so it always tracks the orb. */
 
 .voice-visual > :not(.voice-visual-decoration) {
   z-index: 1;
@@ -79,7 +67,7 @@
 }
 
 .voice-orb::before {
-  top: 18px;
+  top: 24px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -88,9 +76,9 @@
 }
 
 .voice-orb::after {
-  bottom: 24px;
-  width: 88px;
-  height: 22px;
+  bottom: 26px;
+  width: 92px;
+  height: 20px;
   background: #c9f36b;
   clip-path: polygon(0 45%, 5% 45%, 8% 20%, 12% 72%, 16% 35%, 20% 5%, 24% 90%, 28% 32%, 33% 44%, 38% 18%, 42% 72%, 47% 0, 52% 100%, 57% 28%, 62% 66%, 67% 16%, 72% 82%, 77% 36%, 82% 55%, 87% 8%, 92% 78%, 96% 42%, 100% 42%, 100% 58%, 96% 58%, 92% 95%, 87% 25%, 82% 72%, 77% 53%, 72% 99%, 67% 34%, 62% 84%, 57% 42%, 52% 100%, 47% 18%, 42% 90%, 38% 36%, 33% 60%, 28% 48%, 24% 100%, 20% 17%, 16% 48%, 12% 88%, 8% 36%, 5% 58%, 0 58%);
   filter: drop-shadow(0 0 5px rgba(201, 243, 107, .65));
@@ -109,4 +97,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .voice-orb { animation: none; }
+}
+
+@media (max-width: 700px) {
+  .voice-orb::before { top: 19px; }
+  .voice-orb::after { bottom: 22px; width: 76px; height: 18px; }
 }
