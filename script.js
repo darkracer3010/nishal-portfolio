@@ -11,31 +11,38 @@ if (menu && nav) {
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
-// Keep the featured Voice AI card compact and present its stack like the inline
-// technology lists elsewhere on the page.
-const voiceCaseStyles = document.createElement('style');
-voiceCaseStyles.textContent = `
-  .case-featured { margin-bottom: 0; }
-  .case-featured .chip-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 8px;
-    margin-top: 18px;
-    color: #b6c990;
-    font: 10px/1.8 var(--mono);
+// Keep the Voice AI feature flush with the following work cards and format its
+// technology list consistently with the inline lists used elsewhere.
+const featuredCase = document.querySelector('.case-featured');
+if (featuredCase) {
+  featuredCase.style.marginBottom = '0';
+
+  const caseGrid = featuredCase.nextElementSibling;
+  if (caseGrid?.classList.contains('case-grid')) caseGrid.style.marginTop = '0';
+
+  const caseCopy = featuredCase.querySelector('.case-copy');
+  if (caseCopy) {
+    let stack = caseCopy.querySelector('.chip-row');
+    if (!stack) {
+      stack = document.createElement('div');
+      stack.className = 'chip-row';
+      const result = caseCopy.querySelector('.case-result');
+      if (result) result.after(stack);
+      else caseCopy.append(stack);
+    }
+
+    stack.replaceChildren();
+    ['Twilio', 'Azure Voice Live', 'Pipecat', 'Python', 'RAG'].forEach((technology, index) => {
+      if (index) stack.append(document.createTextNode(' · '));
+      stack.append(document.createTextNode(technology));
+    });
+    Object.assign(stack.style, {
+      display: 'block',
+      marginTop: '18px',
+      color: '#b6c990',
+      fontFamily: 'var(--mono)',
+      fontSize: '10px',
+      lineHeight: '1.8'
+    });
   }
-  .case-featured .chip-row span {
-    display: inline;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: inherit;
-    font: inherit;
-  }
-  .case-featured .chip-row span + span::before {
-    content: "·";
-    margin-right: 8px;
-    color: #71836a;
-  }
-`;
-document.head.appendChild(voiceCaseStyles);
+}
